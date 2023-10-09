@@ -6,30 +6,34 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
+  firstName: "Samyukta",
   middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  lastName: "Jayakumar",
+  message: " Ph.D. candidate passionate about vision research and understanding human behaviour using virtual reality, eye tracking techniques, and quantifiable tools",
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
+      url: "https://github.com/samyuktajayakumar",
     },
-    {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
-    },
-    {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
-    },
+//    {
+//      image: "fa-facebook",
+//      url: "https://www.facebook.com/hashirshoaeb",
+//    },
+//    {
+//      image: "fa-instagram",
+//      url: "https://www.instagram.com/hashirshoaeb/",
+//    },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
+      url: "https://www.linkedin.com/in/samyukta-jayakumar-734222127/",
     },
+//    {
+//      image: "fa-twitter",
+//      url: "https://www.twitter.com/hashirshoaeb/",
+//    },
     {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
+      image: "fa-google",
+      url: "https://scholar.google.com/citations?user=r3GIuZ8AAAAJ&hl=en",
     },
   ],
 };
@@ -51,11 +55,16 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/Sam_HS_01.jpg"),
   imageSize: 375,
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+    "I am currently a Ph.D candidate in the Perception and Learning Lab, supervised by Dr. Aaron Seitz, at University of California, Riverside." +
+    "My work centers on practical application of theories in vision perception and cognition to understand human behavior across a range of healthy and clinical populations." +
+    "Specifically, my research focuses on quantifying the effects of training the primary visual pathway to improve higher cognitive functions." +
+    "I'm also interested in understanding the relationship between visual attention and perception. I'm proficient in using several tools to study human behavior" +
+    "such as eye-tracking devices and neuroimaging equipments with a strong background in programming languages such as MATLAB, R and Python to develop statistical and computation models." +
+    "During my free time I like to play strategy and rpg games, read books and travel to national parks.",
+  resume: "../editable-stuff/resume.pdf",
 };
 
 // PROJECTS SECTION
@@ -63,9 +72,83 @@ const about = {
 //      i.e: reposLength: 0,
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
-const repos = {
+// Leadership SECTION
+const research = {
   show: true,
-  heading: "Recent Projects",
+  heading: "Research Projects",
+  message: 
+    "Here's a list with details on projects I have worked on",
+  data: [
+    {
+      title: "Optimization of subjective eye contact experience in video conferencing platforms",
+      duration: "Oct 2022 - Aug 2023",
+      bulletPoints: [
+        "Identified core concepts rooted in gaze perception that addressed the lack of eye contact experience in video conferencing platforms (Zoom, Google Duo)",
+        "Devised a method to collect, assimilate and stratify data from human actors to simulate eye gaze in controlled environments",
+        "Designed a psychophysical experiment to measure subjective perception of eye contact while viewing human actor faces simulated in a real-world video conference setting",
+        "Integrated the use of eye tracking to obtain objective measures of eye contact perception",
+        "Findings from the study are currently under review in CHI 2024",
+        "Currently developing effective tools and methods to compare overall experiences when viewing human faces vs AI generated faces",
+      ],
+    },
+    {
+      title: "Investigating the Impact of Simulated Central Vision Loss on User Experience",
+      duration: "Oct 2022 - June 2023",
+      bulletPoints: [
+        "Designed and implemented simulated central vision loss using VPixx and Tobii eye tracking software across different platforms like lab-based Computer and iPad devices",
+        "Quantified behavioral objective performance measures and validated subjective performance using self-report questionnaires to measure the influence of ergonomics of task environment on overall user experience",
+        "Currently exploring methods to incorporate testing in VR environments integrating eye tracking with visual search task to simulate and characterize the potency of using eye gaze measures to develop insights on the effect of task environment",
+      ],
+    },
+    {
+      title: "Characterizing Contrast Sensitivity Function in Healthy Individuals",
+      duration: "Jun 2020 - Jun 2021",
+      bulletPoints: [
+        "Developed and compared four different techniques to measure Contrast Sensitivity quickly and efficiently in healthy young adults",
+        "Provided data-driven algorithms to develop robust adaptive techniques that can estimate the Contrast Sensitivity function",
+        "Structured and utilized the QUEST tool on MATLAB to compare and estimate the efficiency of the different techniques implemented",
+        "Performed test-retest reliability for each of the proposed techniques",
+        "Currently exploring Machine learning algorithms to estimate Contrast Sensitivity function efficiently and accurately in healthy individuals",
+      ],
+    },
+    {
+      title: "Quantifying the breadth and depth of Vision Perception training in healthy young",
+      duration: "Jun 2022 - Present",
+      bulletPoints: [
+        "Evaluating the generalizability of diverse visual perception training methods through the implementation of standard, visual attention and multi-sensory learning paradigms in healthy young adults",
+        "Examining the effect of individual differences in training profiles by administering questionnaires that target personality measures and cognitive factors between and across age span",
+        "Managed and contributed to creating an open-source application (PLFest) for designing and testing visual perceptual learning paradigms",
+        "Observed robust test-retest reliability and validity of vision tasks on the iPad in comparison to performance observed on conventional computerized testing platforms",
+      ],
+    },
+    {
+      title: "Understanding the factors in learning and plasticity in healthy individuals with simulated central vision loss",
+      duration: "Jun 2022 - Present",
+      bulletPoints: [
+        "Designed visual tasks that train peripheral vision under conditions of simulated central vision loss",
+        "Designed experiments using MATLAB Psychtoolbox and successfully integrated them with VPixx eye tracking software",
+        "Utilized real-time eye tracking to generate a blind spot simulating central vision loss",
+        "Utilized GitHub version control to ensure code compatibility across multiple platforms/sites",
+        "Evaluating the effect of training paradigms on peripheral attentional mechanisms and higher cognitive tasks",
+        "Preliminary results pointed towards improved behavioral compensatory strategies",
+      ],
+    },
+    {
+      title: "Designing, Testing and Validating a computerized training paradigm for effective rehabilitation of visual disorders in Schizophrenia patients",
+      duration: "Sept 2019 - Jul 2023",
+      bulletPoints: [
+        "Designing an adaptive training algorithm that focuses on improving low, mid, and high-level visual perception in both neurotypical individuals and Schizophrenia patients",
+        "Analyzing, interpreting, and utilizing data driven models to improve training algorithms to benefit patients",
+        "Understanding the interaction of low-level visual tasks with higher order cognitive processes and assessing the effect of the adopted visual training method on these processes in both groups",
+        "A peer reviewed journal submission highlighting findings from this study is currently under revision in Vision Research",
+      ],
+    },
+  ],
+};
+
+const repos = {
+  show: false,
+  heading: "Research Projects",
   gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
   reposLength: 4,
   specificRepos: [],
@@ -100,9 +183,11 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
+    // {name: "MATLAB"},
+    // {name: "R"},
+    // { name: "Python"},// value: 90 },
+    // { name: "SPSS"},
+    // { name: "JASP"},
     { name: "C/C++", value: 65 },
     { name: "JavaScript", value: 90 },
     { name: "React", value: 65 },
@@ -152,4 +237,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, research, repos, skills, leadership, getInTouch, experiences };

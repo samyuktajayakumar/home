@@ -5,6 +5,7 @@ import {
   mainBody,
   about,
   repos,
+  research,
   leadership,
   skills,
   getInTouch,
@@ -12,6 +13,7 @@ import {
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
+import Research from "./components/home/Research";
 import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -42,6 +44,15 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
+      {
+        research.show && (
+          <Research
+            heading={research.heading}
+            message={research.message}
+            data={research.data}
+          />
+        )
+      }
       {
         experiences.show && (
           <Experience experiences={experiences}/>
