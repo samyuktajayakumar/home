@@ -145,7 +145,152 @@ const research = {
     },
   ],
 };
-
+const publications = {
+  show: true,
+  heading: "Publications",
+  message: 
+    "List of Publications",
+  data: [
+    {
+      title: "A Computational Model that explores the effect of Environmental Geometries on Grid cell Representations",
+      journal: "Frontiers in Neural Circuits",
+      bulletPoints: [
+        {
+          text: "Jayakumar, S.*, Narayanamurthy, R.*, Ramesh, R., Soman, K., Muralidharan, V., Chakravarthy, V.S.",
+          subPoints: [
+            "Built a computational model using MATLAB that simulates rodent hippocampal activity",
+            "Neural Networks Used - Laterial Anti Hebbian and oscillatory networks",
+            "Model successfully replicated previous experimental findings",
+            "The study also focuses on proposing future experiments based on simulations run successfully using the model",
+          ],
+        },
+      ],
+    },
+    {
+      title: "A Cortico-Basal ganglia model for choosing an optimal rehabilitation strategy in Hemiparetic Stroke",
+      journal: "Scientific Reports, Nature",
+      bulletPoints: [
+        {
+          text: "Narayanamurthy, R.*, Jayakumar, S.*, Elango, S., Muralidharan, V., Chakravarthy, V.S.",
+          subPoints: [
+            "Computational model simulating human sensory - motor cortical loops and inner basal ganglia loop",
+            "Machine learning networks - Continuous attractor neural network, self organizing maps",
+            "Hemi-paretic stroke was simulated by nullifying activity in a region of the motor cortex",
+            "Model successfully replicated experimental findings of reaching behaviors in humans with stroke",
+            "Paper proposes an individually tailored rehabilitation mechanism based on model simulations of existing techniques employed",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Performance on a Contour Integration Task as a function of Contour Shapes in Schizophrenia and Controls",
+      journal: "Vision Research - In Revision",
+      bulletPoints: [
+        {
+          text: "Jayakumar, S.*, Silverstein, S., Butler, P.D., Thompson, J., Ahmed, A.O., Seitz, A.R.",
+          subPoints: [
+            "Paper focuses on highlighting the behavioral difference between neurotypical individuals and patients with schizophrenia when performing a Contour Integration task",
+            "Main findings indicate that using abstract shapes brought out key differences between the two groups",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Contrast Response Function Estimation with Nonparametric Bayesian Active Learning",
+      journal: "Journal of Vision - Accepted",
+      bulletPoints: [
+        {
+          text: "Marticorena, D., Wong, Q.W., Browning, J., Wilbur, K., Jayakumar, S., Davey, P., Seitz, A.R., Gardner, J.R., Barbour, D.L.",
+          subPoints: [
+            "Study successfully replicated several pattern of behaviors in healthy and patient populations when performing a contrast sensitivity estimation task",
+            "Contributed to analyzing behavioral data from patients with schizophrenia and healthy individuals who participated in a contrast training study that spanned across 40 sessions",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Dont Look at the Camera: Perceived Eye Contact",
+      journal: "CHI 2024 - Under review",
+      bulletPoints: [
+        {
+          text: "Gao, A.*, Jayakumar, S., Maniglia, M., Hong, Y., Fish, D., Chang, M., Roth, J., Farmer, B.,Baltazar, N.C., Seitz, A.R., Schlizerman, I.K., Curless, B., Seitz, S.R.",
+          subPoints: [
+            "Study aimed to simulate subjective gaze contact in video conferencing platforms under controlled conditions",
+            "Results pointed to the finding that looking directly into the camera isn't the most optimal way to achieve eye contact during video conferences, instead looking just below the camera serves the purpose more accurately",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Reliability and Validity of PLFest: A cross platform application to support open science in vision perception",
+      journal: "In preparation",
+      bulletPoints: [
+        {
+          text: "Jayakumar, S.*, Maniglia, M., Stavropoulos, T., Collins, C., Carillo, A., Guan, H., Green, S., Seitz, A.R.",
+          subPoints: [
+            "Reliability and Validity testing of PLFest application",
+            "Comparing performance on a visual acuity and contrast sensitivity task across multiple devices such as iPad, Cambridge Research System (CRS) monitor and LG monitor",
+            "Calibrated luminance parameters and gamma corrected inputs to particular devices",
+            "Preliminary results point to high test-retest reliability and validity of the two tasks across all devices",
+          ],
+        },
+      ],
+    },
+  ],
+  };
+  const conferences = {
+    show: true,
+    heading: "Conference Presentations/ Talks",
+    message: 
+      "Here's a list of all talks and conference presentations",
+    data: [
+      {
+        title: "Perceptual Learning for Contrast Detection and Contour Integration in Schizophrenia",
+        conference: "7th Biennial Perceptual Learning Workshop, 2022",
+        authors: "Jayakumar, S.*, Yaghoubi, K., Silverstein, S., Butler, P.D., Thompson, J., Ahmed, A.O., Seitz, A.R.",
+      },
+      {
+        title: "PLFest: A cross-platform application to support open science in perceptual learning research",
+        conference: "Vision Science Society, 2023",
+        authors: "Jayakumar, S.*, Maniglia, M., Stavropoulos, T., Guan, H., Green, C.S., Seitz, A.R.",
+      },
+      {
+        title: "Nonparametric Bayesian Estimation of Contrast Sensitivity Functions",
+        conference: "Vision Science Society, 2023",
+        authors: "Barbour, D., Marticorena, D., Shaffiey, S., Wong, Q.W., Wilbur, K., Jayakumar, S., Davey, P., Gardner, J., Seitz, A.R.",
+      },
+      {
+        title: "Performance on a Contour Integration task as a function of Contour Shapes: A comparison study between individuals with schizophrenia and Neurotypical Individuals",
+        conference: "Vision Science Society, 2022",
+        authors: "Jayakumar, S.*, Yaghoubi, K., Silverstein, S., Butler, P.D., Thompson, J., Ahmed, A.O., Seitz, A.R.",
+      },
+      {
+        title: "Characterization of training profiles between individuals with schizophrenia and healthy individuals on contrast detection and contour integration tasks",
+        conference: "Vision Science Society, 2022",
+        authors: "Yaghoubi, K., Jayakumar, S.*, Silverstein, S., Butler, P.D., Thompson, J., Ahmed, A.O., Seitz, A.R.",
+      },
+      {
+        title: "The relationships between visual acuity, crowding and spatial attention in the selection of the PRL during simulated central vision loss",
+        conference: "Vision Science Society, 2022",
+        authors: "Marcello, M., Demirayak, P., Jayakumar, S., Visscher, K.M., Seitz, A.R.",
+      },
+      {
+        title: "A Cortico-Basal ganglia model for choosing an optimal rehabilitation strategy in Hemiparetic Stroke",
+        conference: "Society for Neuroscience, 2019",
+        authors: "Narayanamurthy, R.*, Jayakumar, S.*, Elango, S., Muralidharan, V., Chakravarthy, V.S.",
+      },
+      {
+        title: "A velocity driven oscillatory network model for object vector cells",
+        conference: "Society for Neuroscience, 2019",
+        authors: "Elango, S., Prakash, M., Aziz, A., Narayanamurthy, R., Jayakumar, S., Chakravarthy, V.S.",
+      },
+      {
+        title: "A Cortico-Basal ganglia model for Bimanual reaching in Hemi-paretic stroke",
+        conference: "Bernstein, 2017",
+        authors: "Narayanamurthy, R.*, Jayakumar, S.*, Gupta, R., Muralidharan, V., Unni, M.P., Sinha, A., Chakravarthy, V.S.",
+      },
+    ],
+  };
 const repos = {
   show: false,
   heading: "Research Projects",
@@ -237,4 +382,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, research, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, research, publications, conferences, repos, skills, leadership, getInTouch, experiences };

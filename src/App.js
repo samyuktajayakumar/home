@@ -6,6 +6,8 @@ import {
   about,
   repos,
   research,
+  publications,
+  conferences,
   leadership,
   skills,
   getInTouch,
@@ -14,6 +16,8 @@ import {
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Research from "./components/home/Research";
+import Publications from "./components/home/Publications";
+import Conferences from "./components/home/Conferences";
 import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -50,6 +54,24 @@ const Home = React.forwardRef((props, ref) => {
             heading={research.heading}
             message={research.message}
             data={research.data}
+          />
+        )
+      }
+      {
+        publications.show && (
+          <Publications
+            heading={publications.heading}
+            message={publications.message}
+            data={publications.data}
+          />
+        )
+      }
+      {
+        conferences.show && (
+          <Conferences
+            heading={conferences.heading}
+            message={conferences.message}
+            data={conferences.data}
           />
         )
       }
