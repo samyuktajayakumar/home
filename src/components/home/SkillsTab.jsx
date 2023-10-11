@@ -9,26 +9,25 @@ function SkillsSection({ skills, isScrolled }) {
         <SkillsBar
           key={`${skill}-${index}`}
           skill={skill.name}
-          value={skill.value}
           isScrolled={isScrolled}
         />
       ))}
     </>
   );
 }
-
-function SkillsTab({ skills, isScrolled }) {
+// SkillsTab uses the length of skills list and slices it based on how many ever sections you want. - not a great way to do it imo, wcyd
+function SkillsTab({ skills, isScrolled}) {
   return (
     <>
       <Col xs={12} md={6}>
         <SkillsSection
-          skills={skills.slice(0, Math.floor(skills.length / 2))}
+          skills={skills[0].fields.slice(0, Math.floor(skills[0].fields.length / 2))}
           isScrolled={isScrolled}
         />
       </Col>
       <Col xs={12} md={6}>
         <SkillsSection
-          skills={skills.slice(Math.floor(skills.length / 2), skills.length)}
+          skills={skills[0].fields.slice(Math.floor(skills[0].fields.length / 2), skills[0].fields.length)}
           isScrolled={isScrolled}
         />
       </Col>
