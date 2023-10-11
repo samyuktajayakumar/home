@@ -30,9 +30,6 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
       setProfilePicUrl(link);
     }
   }, [link]);
-
-
-
   return (
     <Jumbotron id="aboutme" className="m-0">
       <div className="container row">
@@ -49,7 +46,10 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
         </div>
         <div className={`col-lg-${showPic ? "7" : "12"}`}>
           <h2 className="display-4 mb-5 text-center">{heading}</h2>
-          <p className="lead text-center">{message}</p>
+          {<p className="lead justify-content">{message[0]}</p> /*hardcoded values, assuming number of paragraphs would always be 4*/}
+          <p className="lead justify-content">{message[1]}</p>
+          <p className="lead justify-content">{message[2]}</p>
+          <p className="lead justify-content">{message[3]}</p>
           {resume && (
             <p className="lead text-center">
               <a

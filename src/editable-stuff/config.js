@@ -49,21 +49,20 @@ const mainBody = {
 //d) If you do not want any picture to be displayed, just leave it empty :)
 //      i.e: profilePictureLink: "",
 // For Resume either provide link to your resume or import from "editable-stuff" directory
-//     i.e resume: require("../editable-stuff/resume.pdf"),
+//     i.e. resume: require("../editable-stuff/resume.pdf"),
 //         resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-
+// Making message a List so that we can define paragraphs
 const about = {
   show: true,
   heading: "About Me",
   imageLink: require("../editable-stuff/Sam_HS_01.jpg"),
   imageSize: 375,
-  message:
-    "I am currently a Ph.D candidate in the Perception and Learning Lab, supervised by Dr. Aaron Seitz, at University of California, Riverside.\n" +
-    "My work centers on practical application of theories in vision perception and cognition to understand human behavior across a range of healthy and clinical populations.\n" +
-    "Specifically, my research focuses on quantifying the effects of training the primary visual pathway to improve higher cognitive functions.\n" +
-    "I'm also interested in understanding the relationship between visual attention and perception. I'm proficient in using several tools to study human behavior" +
-    "such as eye-tracking devices and neuroimaging equipments with a strong background in programming languages such as MATLAB, R and Python to develop statistical and computation models.\n" +
+  message: [
+    "I am currently a Ph.D candidate in the Perception and Learning Lab, supervised by Dr. Aaron Seitz, at University of California, Riverside.",
+    "My work centers on practical application of theories in vision perception and cognition to understand human behavior across a range of healthy and clinical populations. Specifically, my research focuses on quantifying the effects of training the primary visual pathway to improve higher cognitive functions.",
+    "I'm also interested in understanding the relationship between visual attention and perception. I'm proficient in using several tools to study human behavior such as eye-tracking devices and neuroimaging equipments with a strong background in programming languages such as MATLAB, R and Python to develop statistical and computation models.",
     "During my free time I like to play strategy and rpg games, read books and travel to national parks.",
+  ],
   resume: "../editable-stuff/resume.pdf",
 };
 
