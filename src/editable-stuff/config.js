@@ -58,11 +58,11 @@ const about = {
   imageLink: require("../editable-stuff/Sam_HS_01.jpg"),
   imageSize: 375,
   message:
-    "I am currently a Ph.D candidate in the Perception and Learning Lab, supervised by Dr. Aaron Seitz, at University of California, Riverside." +
-    "My work centers on practical application of theories in vision perception and cognition to understand human behavior across a range of healthy and clinical populations." +
-    "Specifically, my research focuses on quantifying the effects of training the primary visual pathway to improve higher cognitive functions." +
+    "I am currently a Ph.D candidate in the Perception and Learning Lab, supervised by Dr. Aaron Seitz, at University of California, Riverside.\n" +
+    "My work centers on practical application of theories in vision perception and cognition to understand human behavior across a range of healthy and clinical populations.\n" +
+    "Specifically, my research focuses on quantifying the effects of training the primary visual pathway to improve higher cognitive functions.\n" +
     "I'm also interested in understanding the relationship between visual attention and perception. I'm proficient in using several tools to study human behavior" +
-    "such as eye-tracking devices and neuroimaging equipments with a strong background in programming languages such as MATLAB, R and Python to develop statistical and computation models." +
+    "such as eye-tracking devices and neuroimaging equipments with a strong background in programming languages such as MATLAB, R and Python to develop statistical and computation models.\n" +
     "During my free time I like to play strategy and rpg games, read books and travel to national parks.",
   resume: "../editable-stuff/resume.pdf",
 };
@@ -306,15 +306,15 @@ const leadership = {
   message:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
-    { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/Sam_HS_01.jpg"),
+      label: "First slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum."
     },
-    { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/Sam_HS_01.jpg"),
+      label: "Second slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum."
     },
   ],
   imageSize: {
@@ -328,26 +328,66 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    // {name: "MATLAB"},
-    // {name: "R"},
-    // { name: "Python"},// value: 90 },
-    // { name: "SPSS"},
-    // { name: "JASP"},
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    {
+      category: "Research Methodologies",
+      fields: [
+        { name: "Experimental Design" },
+        { name: "A/B Testing" },
+        { name: "Usability Testing" },
+        { name: "Eye-tracking (Eyelink, VPixx, Tobii)" },
+      ]
+    },
+    {
+      category: "Statistical Analysis",
+      fields: [
+        { name: "Multivariate Analysis" },
+        { name: "t-tests" },
+        { name: "ANOVA" },
+        { name: "Regression" },
+        { name: "GLM" },
+        { name: "Factor Analysis" },
+      ]
+    },
+    {
+      category: "Programming Languages and Softwares",
+      fields: [
+        { name: "MATLAB" },
+        { name: "R" },
+        { name: "Python" },
+      ]
+    },
+    {
+      category: "Statistical Tools",
+      fields: [
+        { name: "Excel" },
+        { name: "SPSS" },
+        { name: "JASP" },
+      ]
+    },
+    {
+      category: "Machine Learning",
+      fields: [
+        { name: "CNN" },
+        { name: "RNN" },
+        { name: "DNN" },
+        { name: "Clustering, Regression and Classification Algorithms" },
+      ]
+    },
   ],
   softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+    {
+      category: "Other",
+      fields: [
+        { name: "Goal-Oriented" },
+        { name: "Collaboration"},
+        { name: "Positivity" },
+        { name: "Adaptability" },
+        { name: "Problem Solving" },
+        { name: "Empathy" },
+        { name: "Organization" },
+        { name: "Creativity" },
+      ]
+    },
   ],
 };
 

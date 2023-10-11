@@ -2,6 +2,7 @@ import React from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import SkillsTab from "./SkillsTab";
+import HardSkillsTab from "./HardSkillsTab";
 import Row from "react-bootstrap/Row";
 import { Jumbotron } from "./migration";
 import { Container } from "react-bootstrap";
@@ -37,7 +38,7 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
             title="Technical Skills"
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={hardSkills} isScrolled={isScrolled} />
+              <HardSkillsTab skills={hardSkills} isScrolled={isScrolled} />
             </Row>
           </Tab>
           <Tab
