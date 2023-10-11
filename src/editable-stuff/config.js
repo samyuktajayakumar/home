@@ -67,11 +67,10 @@ const about = {
 };
 
 // PROJECTS SECTION
-// Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
+// Setting up project length will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
 //      i.e: reposLength: 0,
-// If you want to display specfic projects, add the repository names,
+// If you want to display specific projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
-// Leadership SECTION
 const research = {
   show: true,
   heading: "Research Projects",
