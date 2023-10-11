@@ -238,7 +238,7 @@ const publications = {
   };
   const conferences = {
     show: true,
-    heading: "Conference Presentations/ Talks",
+    heading: "Conference Presentations / Talks",
     message: 
       "Here's a list of all talks and conference presentations",
     data: [
